@@ -3,12 +3,14 @@ from telebot import types
 import telebot, time
 from Before_Calendar import before_calendar
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 from Gmail import gmail_ckeck
 from bs4 import BeautifulSoup
 
 
 bot = telebot.TeleBot("1935902695:AAFMQQ9Mp7hEsgt-urO-6B29sokLc9yrSuA")  # Insert your bot's TOKEN here
-driver = webdriver.Chrome("./chromedriver/chromedriver.exe")  # Address browser driver (smth.exe)
+#driver = webdriver.Chrome("./chromedriver/chromedriver.exe")  # Address browser driver (smth.exe)
+driver = webdriver.Chrome(ChromeDriverManager().install())
 otp_automate = True  # It is defined to specify the OTP extraction's method
 
 all_users = {}
