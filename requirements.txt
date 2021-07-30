@@ -1,3 +1,4 @@
 pyTelegramBotAPI
 selenium
 bs4
+chromium-chromedriver
